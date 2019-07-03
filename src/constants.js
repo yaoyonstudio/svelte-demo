@@ -1,0 +1,1 @@
+export const API_URL = 'http://wp.thatyou.cn/wp-json/wp/v2'
