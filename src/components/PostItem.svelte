@@ -1,4 +1,6 @@
 <script>
+  import { Link } from "svelte-routing";
+
   export let data;
 </script>
 
@@ -28,11 +30,11 @@
           <p class="card-text mb-0">
             <small class="text-muted">{data.date}</small>
           </p>
-          <a
-            href={`/post.html?id=${data.id}`}
+          <Link
+            to={`/post/${data.id}`}
             class="d-block btn btn-primary stretched-link">
             查看详情
-          </a>
+          </Link>
         </div>
       </div>
     </div>
